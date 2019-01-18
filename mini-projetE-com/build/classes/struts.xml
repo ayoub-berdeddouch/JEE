@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+   <constant name="struts.devMode" value="true" />
+   <package name="default" extends="struts-default">
+      
+      
+      
+      
+      <!--  Action du Caddie -->
+      <action name="Actioncaddie" 
+         class="com.ecom.caddie.Actioncaddie" method="execute">
+         <result name="success">previewcaddie.jsp</result>
+         <result name="input">acceuile.jsp</result>
+      </action>
+      
+      <!--  Action Qt caddie -->
+      <action name="Actionqtecaddie" 
+         class="com.ecom.caddie.Actioncaddie" method="executeqte">
+         <result name="success">caddiecontent.jsp</result>
+         <result name="input">previewcaddie.jsp</result>
+      </action>
+      
+      <!--  Action total caddie -->
+       <action name="Actiontotal" 
+         class="com.ecom.caddie.Actioncaddie" method="executettc">
+         <result name="success">caddiecontent.jsp</result>
+         <result name="input">404.jsp</result>
+      </action>
+      
+      
+      <!--  Action vider caddie -->
+      <action name="vider_caddie" 
+         class="com.ecom.caddie.Actioncaddie" method="vider_caddie">
+         <result name="success">acceuile.jsp</result>
+      </action>
+      <!--  Action Creerun utilisateur -->
+           
+      <action name="ActionRegister" 
+         class="com.ecom.client.ActionRegister" method="execute">
+         <result name="success">caddiecontent.jsp</result>
+         <result name="input">registerClient.jsp</result>
+      </action>
+      
+      
+     <!--  Action Login  -->
+     
+     <action name="ActionLogin" 
+         class="com.ecom.client.ActionLogin" method="execute">
+         <result name="success">cmdvalider.jsp</result>
+         <result name="input">404.jsp</result>
+      </action> 
+   </package>
+
+</struts>

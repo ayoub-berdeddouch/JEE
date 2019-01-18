@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE validators PUBLIC "-//Apache Struts//XWork Validator 1.0.3//EN"
+	        "http://struts.apache.org/dtds/xwork-validator-1.0.3.dtd">
+	<validators>
+	   
+		<!-- Validateur du  Nom Client -->
+		<field name="nomCli">
+	       <field-validator type="requiredstring">
+	           <param name="trim">true</param>
+	           <message>Tapper votre Nom</message>
+	       </field-validator>
+	   </field>
+		
+		<!-- Validateur du  Prenom Client -->
+		<field name="prenomCli">
+	       <field-validator type="requiredstring">
+	           <param name="trim">true</param>
+	           <message>Tapper votre Nom</message>
+	       </field-validator>
+	   </field>
+		
+		<!-- Validateur du Address Client -->
+		<field name="address">
+	       <field-validator type="requiredstring">
+	           <param name="trim">true</param>
+	           <message>Tapper votre Nom</message>
+	       </field-validator>
+	   </field>
+		
+		
+	   
+	 
+	     	<!-- Validateur du Password -->
+	     
+	    
+	    <field name="password">
+			<field-validator type="requiredstring">
+					<message>
+							Tapper votre mot de passe !
+					</message>
+			</field-validator>
+			<field-validator type="stringlength">
+				<param name="minLength">6</param>
+					<message>
+						Le mot de passe doit contenir au-moins 6 caractéres!
+					</message>
+			</field-validator>
+		</field>
+	    
+	    
+	      
+	   <field name="password">
+			<field-validator type="fieldexpression">
+				<param name="fieldName">cpassword</param>
+				<param name="expression">
+					cpassword == password
+				</param>
+					<message>le mot de passe incorrect</message>
+			</field-validator>
+		</field>
+		
+			<!-- Validateur du Cpassword -->
+		
+		<field name="cpassword">
+	       <field-validator type="requiredstring">
+	           <param name="trim">true</param>
+	           <message> Confirmer votre mot de passe</message>
+	       </field-validator>
+	   </field>
+		
+	   </validators>
