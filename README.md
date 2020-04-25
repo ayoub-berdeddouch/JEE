@@ -2,10 +2,18 @@
 
 ### E-Commerce website
 
+```
 HTML5
+
 CSS3
+
 JS
-JEE 
+
+JEE
+
 Java
+
 Struts2x
+
 JSP & Servlet
+```
