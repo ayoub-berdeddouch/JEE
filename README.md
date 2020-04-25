@@ -1,5 +1,11 @@
-# JEE
+# Web Sites
 
-WebSite one with Struts2.x & the other with Servlet JSP
+### E-Commerce website
 
-tags , JEE , JAVA, STruts2.x, CSS, HTML, JSP,Libs
+HTML5
+CSS3
+JS
+JEE 
+Java
+Struts2x
+JSP & Servlet
